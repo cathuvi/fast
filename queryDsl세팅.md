@@ -1,7 +1,11 @@
+
+[//]: # (spring boot 3.0 이상)
+[//]: # (jpa - 5.0)
+[//]: # (gradle - 7.x)
 plugins {
-    id 'java'
-    id 'org.springframework.boot' version '3.0.2'
-    id 'io.spring.dependency-management' version '1.1.0'
+id 'java'
+id 'org.springframework.boot' version '3.0.2'
+id 'io.spring.dependency-management' version '1.1.0'
 }
 
 group = 'com.usafe'
@@ -9,13 +13,13 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
 
 configurations {
-    compileOnly {
-        extendsFrom annotationProcessor
-    }
+compileOnly {
+extendsFrom annotationProcessor
+}
 }
 
 repositories {
-    mavenCentral()
+mavenCentral()
 }
 
 dependencies {
@@ -42,6 +46,6 @@ dependencies {
 }
 
 tasks.named('test') {
-    useJUnitPlatform()
+useJUnitPlatform()
 }
 //querydsl 추가 끝
